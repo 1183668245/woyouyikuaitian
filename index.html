@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE FIELD 我有一块田</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="page-shell">
+        <div class="site-background" aria-hidden="true">
+            <canvas id="bgFrameCanvas"></canvas>
+        </div>
+
+        <header class="site-header">
+            <div class="mobile-header-top">
+                <a class="logo-area" href="#" aria-label="ONE FIELD 首页">
+                    <img src="image/111-转换自-png.webp" alt="" class="logo-image desktop-only">
+                    <span class="mobile-brand mobile-only">
+                        <img src="assets/images/logo-placeholder.png" alt="" class="logo-image-mobile">
+                        <span class="mobile-brand-copy">
+                            <span class="mobile-brand-en">ONE FIELD</span>
+                            <span class="mobile-brand-cn">我有一块田</span>
+                        </span>
+                    </span>
+                </a>
+
+                <div class="header-actions">
+                    <button class="header-icon-button" type="button" aria-label="功能按钮 1">
+                        <img src="image/05-转换自-png.webp" alt="">
+                    </button>
+                    <button class="header-icon-button" type="button" aria-label="功能按钮 2">
+                        <img src="image/06-转换自-png.webp" alt="">
+                    </button>
+                    <button class="wallet-button" type="button">连接钱包</button>
+                </div>
+            </div>
+
+            <nav class="site-nav" aria-label="主导航">
+                <a class="nav-link is-active" href="#">
+                    <span>首页</span>
+                    <span class="nav-indicator" aria-hidden="true"></span>
+                </a>
+                <a class="nav-link" href="#">我的菜园</a>
+                <a class="nav-link" href="#">菜市场</a>
+                <a class="nav-link" href="#">种菜王</a>
+                <a class="nav-link" href="#">数据</a>
+            </nav>
+        </header>
+
+        <main class="page-main">
+            <section class="hero">
+                <div class="hero-content">
+                    <p class="eyebrow">ONE PERSON · ONE FIELD</p>
+                    <h1 class="chinese-title">我有一块田</h1>
+                    <p class="english-title">ONE FIELD</p>
+                    <p class="slogan">一人一块田，种下好收成。</p>
+                    <p class="description">开一块田，播下种子，收获菜量，每周一起集卖菜。</p>
+
+                    <div class="hero-buttons">
+                        <button class="hero-button hero-button-primary" type="button">开垦我的菜园</button>
+                        <button class="hero-button hero-button-secondary" type="button">查看玩法</button>
+                    </div>
+                </div>
+
+                <div class="hero-animation-mobile mobile-only" aria-hidden="true">
+                    <canvas id="heroFrameCanvasMobile"></canvas>
+                    <img
+                        class="hero-mobile-placeholder"
+                        src="assets/images/hero-placeholder.png"
+                        alt=""
+                    >
+                </div>
+
+                <aside class="hero-side-rail desktop-only" aria-label="右侧玩法栏">
+                    <div class="side-feature-panel">
+                        <article class="side-feature-item">
+                            <div class="side-feature-thumb" aria-hidden="true">
+                                <img src="image/13-转换自-png.webp" alt="">
+                            </div>
+                            <div class="side-feature-copy">
+                                <h2 class="side-feature-title">质押开田</h2>
+                                <p class="side-feature-desc">四种等级田地</p>
+                            </div>
+                        </article>
+
+                        <article class="side-feature-item">
+                            <div class="side-feature-thumb" aria-hidden="true">
+                                <img src="image/14-转换自-png.webp" alt="">
+                            </div>
+                            <div class="side-feature-copy">
+                                <h2 class="side-feature-title">买种子燃烧</h2>
+                                <p class="side-feature-desc">多种子选择</p>
+                            </div>
+                        </article>
+
+                        <article class="side-feature-item">
+                            <div class="side-feature-thumb" aria-hidden="true">
+                                <img src="image/15-转换自-png.webp" alt="">
+                            </div>
+                            <div class="side-feature-copy">
+                                <h2 class="side-feature-title">播种成长</h2>
+                                <p class="side-feature-desc">等待作物成熟</p>
+                            </div>
+                        </article>
+
+                        <article class="side-feature-item">
+                            <div class="side-feature-thumb" aria-hidden="true">
+                                <img src="image/16-转换自-png.webp" alt="">
+                            </div>
+                            <div class="side-feature-copy">
+                                <h2 class="side-feature-title">收获菜量</h2>
+                                <p class="side-feature-desc">积累你的收成</p>
+                            </div>
+                        </article>
+
+                        <article class="side-feature-item">
+                            <div class="side-feature-thumb" aria-hidden="true">
+                                <img src="image/17-转换自-png.webp" alt="">
+                            </div>
+                            <div class="side-feature-copy">
+                                <h2 class="side-feature-title">周一卖菜</h2>
+                                <p class="side-feature-desc">分享 BTC 奖励</p>
+                            </div>
+                        </article>
+
+                        <article class="side-feature-item">
+                            <div class="side-feature-thumb" aria-hidden="true">
+                                <img src="image/18-转换自-png.webp" alt="">
+                            </div>
+                            <div class="side-feature-copy">
+                                <h2 class="side-feature-title">幸运抽奖</h2>
+                                <p class="side-feature-desc">黄金玉米中大奖</p>
+                            </div>
+                        </article>
+                    </div>
+                </aside>
+
+                <div class="hero-stats">
+                    <article class="stat-card stat-card-percent">
+                        <div class="stat-icon" aria-hidden="true">
+                            <img src="image/01-转换自-png.webp" alt="">
+                        </div>
+                        <div class="stat-copy">
+                            <div class="stat-value">90%</div>
+                            <div class="stat-label">分红池</div>
+                        </div>
+                    </article>
+
+                    <article class="stat-card stat-card-percent">
+                        <div class="stat-icon" aria-hidden="true">
+                            <img src="image/02-转换自-png.webp" alt="">
+                        </div>
+                        <div class="stat-copy">
+                            <div class="stat-value">10%</div>
+                            <div class="stat-label">回购销毁</div>
+                        </div>
+                    </article>
+
+                    <article class="stat-card stat-card-schedule">
+                        <div class="stat-icon" aria-hidden="true">
+                            <img src="image/03-转换自-png.webp" alt="">
+                        </div>
+                        <div class="stat-copy">
+                            <div class="stat-highlight">每周一 20:00</div>
+                            <div class="stat-label stat-label-strong">开市</div>
+                        </div>
+                    </article>
+
+                    <article class="stat-card stat-card-garden">
+                        <div class="stat-icon" aria-hidden="true">
+                            <img src="image/04-转换自-png.webp" alt="">
+                        </div>
+                        <div class="stat-copy">
+                            <div class="stat-highlight">超级菜园</div>
+                            <div class="stat-label stat-label-strong">10块</div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="feature-grid-section" aria-label="玩法亮点">
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-card-image" aria-hidden="true">
+                            <img src="image/07-转换自-png.webp" alt="">
+                        </div>
+                        <div class="feature-card-copy">
+                            <h2 class="feature-card-title">90% 税收分红</h2>
+                            <p class="feature-card-desc">BTCB 奖励池</p>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-card-image" aria-hidden="true">
+                            <img src="image/08-转换自-png.webp" alt="">
+                        </div>
+                        <div class="feature-card-copy">
+                            <h2 class="feature-card-title">10% 回购销毁</h2>
+                            <p class="feature-card-desc">通缩更长期</p>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-card-image" aria-hidden="true">
+                            <img src="image/09-转换自-png.webp" alt="">
+                        </div>
+                        <div class="feature-card-copy">
+                            <h2 class="feature-card-title">偷菜互动</h2>
+                            <p class="feature-card-desc">趣味收益玩法</p>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-card-image" aria-hidden="true">
+                            <img src="image/10-转换自-png.webp" alt="">
+                        </div>
+                        <div class="feature-card-copy">
+                            <h2 class="feature-card-title">自动收获</h2>
+                            <p class="feature-card-desc">省心更便捷</p>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-card-image" aria-hidden="true">
+                            <img src="image/11-转换自-png.webp" alt="">
+                        </div>
+                        <div class="feature-card-copy">
+                            <h2 class="feature-card-title">超级菜园</h2>
+                            <p class="feature-card-desc">限量稀有田地</p>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-card-image" aria-hidden="true">
+                            <img src="image/12-转换自-png.webp" alt="">
+                        </div>
+                        <div class="feature-card-copy">
+                            <h2 class="feature-card-title">周抽大奖</h2>
+                            <p class="feature-card-desc">30% 奖励池</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
